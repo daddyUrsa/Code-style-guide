@@ -1,8 +1,6 @@
 # Правила оформления Swift кода
 
-Make sure to read [Apple's API Design Guidelines](https://swift.org/documentation/api-design-guidelines/).
-
-## Table Of Contents
+## Оглавление
 
 - [Swift Style Guide](#swift-style-guide)
     - [1. Форматирование кода](#1-форматирование-кода)
