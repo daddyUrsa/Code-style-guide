@@ -287,7 +287,7 @@ class ConnectionTableViewCell: UITableViewCell {
     // полностью укажите тип в имени.
     let popupTableViewController: UITableViewController
 
-    // при работу с аутлетами будьте уверены, что их типы в названии свойств. 
+    // при работе с аутлетами будьте уверены, что их типы указаны в названии свойств. 
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
@@ -414,7 +414,7 @@ let lastName = name.lastName
 
 * **3.1.5** Будьте осторожны с циклами сильных ссылок при создании delegates/protocols для ваших классов classes; как правило их нужно объявлять `weak`.
 
-* **3.1.6** Будьте осторожны при вызове `self` напрямую из escaping closure так как это может ызать цикл сильных ссылок - используйте [capture list](https://developer.apple.com/library/ios/documentation/swift/conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-XID_163):
+* **3.1.6** Будьте осторожны при вызове `self` напрямую из escaping closure так как это может вызвать цикл сильных ссылок - используйте [capture list](https://developer.apple.com/library/ios/documentation/swift/conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-XID_163):
 
 ```swift
 myFunctionWithEscapingClosure() { [weak self] (error) -> Void in
